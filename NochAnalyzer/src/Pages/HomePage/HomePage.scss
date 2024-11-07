@@ -1,0 +1,81 @@
+@import url("react-slideshow-image/dist/styles.css");
+.homepage {
+  .tempWrapper {
+    padding: 4vh;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-areas:
+      ". title instruction ."
+      ". gallery instruction .";
+    .wrapper {
+      &.title {
+        width: 30vw;
+        height: 15vw;
+        grid-area: title;
+        .secondInput {
+          display: grid;
+          gap: 3vh;
+          grid-template-areas: "one . two" ". btn .";
+          
+          .field1 {
+            background-color: var(--tertiary-text-color);
+            grid-area: one;
+          }
+          .field2 {
+            background-color: var(--tertiary-text-color);
+            grid-area: two;
+          }
+          .button {
+            grid-area: btn;
+            color: var(--tertiary-text-color);
+          }
+        }
+      }
+      &.instruction {
+        grid-area: instruction;
+        justify-self: center;
+      }
+      &.gallery {
+        width: 30vw;
+        height: 50vh;
+        grid-area: gallery;
+      }
+      .title {
+        color: var(--tertiary-text-color);
+        font-weight: bold;
+        text-align: center;
+      }
+      .hideInput {
+        display: none;
+      }
+      .subtitle {
+        color: var(--tertiary-text-color);
+        font-weight: 600;
+        text-align: center;
+      }
+      .input-row {
+        margin-top: 2vh;
+        margin-right: 1vw;
+        .input {
+          width: 50%;
+          background-color: var(--grey-30);
+        }
+        .maor {
+          width: 6rem;
+          border: 2px solid rgba(180, 178, 178, 0.8);
+        }
+      }
+      .guide {
+        width: 20rem;
+      }
+      .gallery {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        height: 50vh;
+      }
+    }
+  }
+}

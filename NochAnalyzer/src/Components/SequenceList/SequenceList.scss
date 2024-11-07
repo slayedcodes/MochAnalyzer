@@ -1,0 +1,34 @@
+.title {
+  color: var(--tertiary-text-color);
+  text-align: center;
+}
+.selectionBar {
+  display: grid;
+  grid-template-areas:
+    "slider slider slider slider slider"
+    "button explanation . . .";
+  .slider {
+    grid-area: slider;
+  }
+  .button {
+    grid-area: button;
+  }
+  .text {
+    color: var(--tertiary-text-color);
+    grid-area: explanation;
+    align-content: center;
+  }
+}
+.listItem {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  .listText {
+    color: var(--tertiary-text-color);
+    font-weight: 400;
+  }
+  .listSequence {
+    color: var(--tertiary-text-color);
+    font-weight: bold;
+  }
+}

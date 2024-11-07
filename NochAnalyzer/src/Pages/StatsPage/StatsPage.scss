@@ -1,0 +1,131 @@
+.stats {
+  display: none;
+}
+
+.stats.visible {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiddenStat {
+  opacity: 0;
+  filter: blur(4px);
+  transition: all 0.7s;
+  &.show {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.pictureBreakOne {
+  margin: 4vh;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "one . . . ."
+    ". . two . ."
+    ". . . . three";
+  .image0 {
+    grid-area: one;
+  }
+  .image1 {
+    grid-area: two;
+  }
+  .image2 {
+    grid-area: three;
+  }
+}
+
+.pictureBreakTwo {
+  margin: 4vh;
+  margin-top: 8vh;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "one . . . two"
+    "three . . . four"
+    "five . . . six";
+  .image0 {
+    grid-area: one;
+  }
+  .image1 {
+    grid-area: two;
+  }
+  .image2 {
+    grid-area: three;
+  }
+  .image3 {
+    grid-area: four;
+  }
+  .image4 {
+    grid-area: five;
+  }
+  .image5 {
+    grid-area: six;
+  }
+}
+
+.pictureBreakThree {
+  margin: 4vh;
+  margin-top: 8vh;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "six five . . . four seven"
+    "two . . one . . three"
+    ". nine . . . eight ."
+    ". . ten . eleven . ."
+    ". . . twelve . . .";
+  .image0 {
+    grid-area: seven;
+  }
+  .image1 {
+    grid-area: two;
+  }
+  .image2 {
+    grid-area: three;
+  }
+  .image3 {
+    grid-area: four;
+  }
+  .image4 {
+    grid-area: five;
+  }
+  .image5 {
+    grid-area: six;
+  }
+  .image6 {
+    grid-area: one !important;
+  }
+  .image7 {
+    grid-area: eight !important;
+  }
+  .image8 {
+    grid-area: nine !important;
+  }
+  .image9 {
+    grid-area: ten !important;
+  }
+  .image10 {
+    grid-area: eleven !important;
+  }
+  .image11 {
+    grid-area: twelve !important;
+  }
+}
+
+.messageBarCharts {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.sequenceList {
+  width: 30vw;
+}

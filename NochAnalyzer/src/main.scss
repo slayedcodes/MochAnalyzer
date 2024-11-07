@@ -1,0 +1,136 @@
+:root {
+  --white: #ffffff;
+  --white-10: #f0f1fd;
+  --white-20: #eff0f9;
+  --white-30: #ffffff;
+
+  --grey: #f9f9f9;
+  --grey-10: #e1e1e1;
+  --grey-20: #e2e2e2;
+  --grey-30: #d8d8d8;
+  --grey-40: #b5b5b5;
+  --grey-50: #b0b0b0;
+  --grey-60: #8f929a;
+  --grey-70: #7b7b7b;
+  --grey-70-transparent: #7d7b7be3;
+  --grey-80: #373737;
+  --grey-90: #2c2c2c;
+
+  --blue-10: #bfdcff;
+  --blue-20: #acdbdf;
+  --blue-30: #9cc9ff;
+  --blue-35: #02e0f31a;
+  --blue-40-hover: #02e0f3b3;
+  --blue-40: #02e0f3;
+  --blue-50-hover: #2c70f5b3;
+  --blue-50: #2c70f5;
+  --blue-55: #3f51b514;
+  --blue-60: #122f47;
+  --blue-70: #122342;
+  --blue-80: #071924;
+  --blue-90: #090e2a;
+  --blue-100: #000e14;
+  --red-rgb: rgb(255, 0, 0);
+  --green-20: #acdbac;
+  --warning-yellow: #ffcc00;
+  --warning-orange: #ff7300;
+  --alert-red: #cc3300;
+  --ok-green: #339900;
+  --purple-20: #cbacdf;
+  --orange-20: #dfacac;
+  --yellow-40: #f7d540;
+  --black: #000000;
+  --cool-pink: #ff00ff;
+  --alerting-red: #ea3755;
+  --error-red: #f44336;
+  --chip-light-blue: #549ee7;
+
+  --primary-bg-color: gradient(
+    to bottom right,
+    rgb(172, 219, 172),
+    rgb(156, 201, 255),
+    rgb(172, 219, 172)
+  );
+  --secondary-bg-color: var(--white);
+  --primary-text-color: var(--grey-40);
+  --secondary-text-color: var(--grey-20);
+  --tertiary-text-color: var(--grey-30);
+  --primary-button-color: var(--blue-40-hover);
+  --primary-button-hover-color: var(--blue-40-hover);
+  --secondary-button-color: var(--grey-40);
+  --popper-bg-color: var(--white);
+  --label-color: #373737;
+
+  --underline-color: rgba(0, 0, 0, 0.42);
+  --hover-color: var(--grey-10);
+  --content-card-color: var(--white);
+  --header-bg-color: var(--primary-bg-color);
+  --svg-icon-color: var(--grey-60);
+  --svg-icon-bg-color: var(--grey-30);
+}
+
+*:not(i) {
+  font-family: Heebo, "Segeo UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+#root,
+body,
+html {
+  direction: rtl;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin: 0;
+  .MuiPaper-root {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: "blur(10px)";
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  .MuiInputLabel-root {
+    left: inherit !important;
+    right: 1.75rem !important;
+    transform-origin: right !important;
+  }
+}
+
+#root {
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  background-size: cover;
+}
+
+a {
+  color: var(--primary-button-color);
+  &:-webkit-any-link {
+    text-decoration: none;
+  }
+  &:hover {
+    color: var(--cool-pink);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--grey-40);
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.app-loading-background {
+  background-color: var(--secondary-bg-color);
+  height: inherit;
+}

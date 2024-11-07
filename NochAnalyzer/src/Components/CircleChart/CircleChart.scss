@@ -1,0 +1,67 @@
+.chart {
+  padding-top: 12vh;
+  display: grid;
+  align-items: end;
+  justify-content: center;
+  grid-template-areas: ". silver gold bronze ." "base base base base base";
+  max-width: 81vw;
+  .podium {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    &.index0 {
+      grid-area: gold;
+      background-color: #daa520;
+      height: 30vh;
+      &.visible {
+        transform: scaleY(1);
+      }
+    }
+    &.index1 {
+      grid-area: silver;
+      background-color: #a9acb6;
+      height: 25vh;
+      &.visible {
+        transform: scaleY(1);
+      }
+    }
+    &.index2 {
+      grid-area: bronze;
+      background-color: #c68346;
+      height: 15vh;
+      &.visible {
+        transform: scaleY(1);
+      }
+    }
+    .emoji {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .amount {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--tertiary-text-color);
+    }
+    width: 10vw;
+    transform-origin: 0 100%;
+    transform: scaleY(0);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    background-color: var(--white);
+    transition: all 2s;
+  }
+  .base {
+    background-color: var(--grey-10);
+    grid-area: base;
+    width: 40vw;
+    height: 5vw;
+  }
+}
+.emojiTitle {
+  color: var(--tertiary-text-color);
+  text-align: center;
+}
